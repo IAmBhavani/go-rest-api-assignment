@@ -28,11 +28,6 @@ func Run() error {
 		log.Error("failed to setup connection to the database")
 		return err
 	}
-	//err = store.MigrateDB()
-	//if err != nil {
-	//	log.Error("failed to setup database")
-	//	return err
-	//}
 
 	studentService := student.NewService(store)
 	handler := transportHTTP.NewHandler(studentService)
@@ -54,22 +49,6 @@ func main() {
 	defer file.Close()
 
 	log.SetOutput(file)
-	// var mySigningKey = []byte("missionimpossible")
-
-	// token := jwt.New(jwt.SigningMethodHS256)
-
-	// claims := token.Claims.(jwt.MapClaims)
-	// claims["authorized"] = true
-	// claims["exp"] = time.Now().Add(time.Hour * 1).Unix()
-	// claims["iat"] = time.Now().Unix()
-
-	// tokenString, err := token.SignedString(mySigningKey)
-	// if err != nil {
-	// 	fmt.Println("Error generating token:", err)
-	// 	return
-	// }
-
-	// fmt.Println("Generated Token:", tokenString)
 
 	if err := Run(); err != nil {
 		log.Error(err)
