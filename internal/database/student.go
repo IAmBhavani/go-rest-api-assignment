@@ -65,10 +65,8 @@ func (d *Database) GetStudents(ctx context.Context) ([]student.Student, error) {
 	}
 	defer rows.Close()
 
-	// Slice to hold the retrieved students
 	var students []student.Student
 
-	// Iterate through the rows and scan the data
 	for rows.Next() {
 		var stdRow StudentRow
 		err := rows.Scan(&stdRow.ID, &stdRow.Fname, &stdRow.Lname, &stdRow.DOB, &stdRow.Email, &stdRow.Address, &stdRow.Gender, &stdRow.CreatedBy, &stdRow.CreatedOn, &stdRow.UpdatedBy, &stdRow.UpdatedOn)
@@ -76,11 +74,9 @@ func (d *Database) GetStudents(ctx context.Context) ([]student.Student, error) {
 			return nil, fmt.Errorf("an error occurred scanning a student row: %w", err)
 		}
 
-		// Convert the row data into a student.Student and append it to the slice
 		students = append(students, convertStudentRowToStudent(stdRow))
 	}
 
-	// Check for any error that may have occurred during iteration
 	if err := rows.Err(); err != nil {
 		return nil, fmt.Errorf("an error occurred after scanning student rows: %w", err)
 	}
@@ -157,10 +153,6 @@ func (d *Database) UpdateStudent(ctx context.Context, id string, std student.Stu
 		return student.Student{}, fmt.Errorf("invalid date format for DOB: %w", err)
 	}
 
-	// UpdatedTime, err := time.Parse(time.RFC3339, std.UpdatedOn)
-	// if err != nil {
-	// 	return student.Student{}, fmt.Errorf("invalid date format for DOB: %w", err)
-	// }
 	stdRow := StudentRow{
 		ID:      id,
 		Fname:   sql.NullString{String: std.Fname, Valid: true},

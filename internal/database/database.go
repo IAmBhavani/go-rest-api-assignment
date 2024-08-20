@@ -26,7 +26,6 @@ func NewDatabase() (*Database, error) {
 		os.Getenv("DB_HOST"),
 		os.Getenv("DB_PORT"),
 		os.Getenv("DB_TABLE"),
-		//os.Getenv("SSL_MODE"),
 	)
 
 	db, err := sqlx.Connect("mysql", connectionString)

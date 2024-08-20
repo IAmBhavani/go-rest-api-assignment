@@ -10,31 +10,6 @@ import (
 	log "github.com/sirupsen/logrus"
 )
 
-// validateToken - validates an incoming jwt token
-// func validateToken(accessToken string) (string, error) {
-// 	var mySigningKey = []byte("missionimpossible")
-// 	token, err := jwt.Parse(accessToken, func(token *jwt.Token) (interface{}, error) {
-// 		if _, ok := token.Method.(*jwt.SigningMethodHMAC); !ok {
-// 			return nil, errors.New("could not validate auth token")
-// 		}
-// 		return mySigningKey, nil
-// 	})
-
-// 	if err != nil {
-// 		return "", err
-// 	}
-
-// 	//return token.Valid
-// 	if claims, ok := token.Claims.(jwt.MapClaims); ok && token.Valid {
-// 		if userID, ok := claims["user_id"].(string); ok {
-// 			return userID, nil
-// 		}
-// 		return "", errors.New("user ID not found in token")
-// 	}
-
-// 	return "", errors.New("invalid token")
-// }
-
 func validateToken(accessToken string) (string, bool) {
 	var mySigningKey = []byte("missionimpossible")
 	token, err := jwt.Parse(accessToken, func(token *jwt.Token) (interface{}, error) {
