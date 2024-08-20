@@ -6,3 +6,12 @@
 {"Method":"PUT","Path":"/api/v1/student/14","level":"info","msg":"handled request","time":"2024-08-20T22:09:47+05:30"}
 {"Method":"PUT","Path":"/api/v1/student/14","level":"info","msg":"handled request","time":"2024-08-20T22:10:22+05:30"}
 {"level":"error","msg":"could not validate incoming token","time":"2024-08-20T22:10:22+05:30"}
+{"Method":"GET","Path":"/alive","level":"info","msg":"handled request","time":"2024-08-20T22:20:28+05:30"}
+{"Method":"GET","Path":"/ready","level":"info","msg":"handled request","time":"2024-08-20T22:20:44+05:30"}
+{"level":"info","msg":"Checking readiness","time":"2024-08-20T22:20:44+05:30"}
+{"Method":"POST","Path":"/api/v1/student","level":"info","msg":"handled request","time":"2024-08-20T22:26:11+05:30"}
+{"level":"error","msg":"could not validate incoming token","time":"2024-08-20T22:26:11+05:30"}
+{"Method":"POST","Path":"/auth","level":"info","msg":"handled request","time":"2024-08-20T22:26:23+05:30"}
+{"Method":"POST","Path":"/api/v1/student","level":"info","msg":"handled request","time":"2024-08-20T22:29:59+05:30"}
+{"Method":"GET","Path":"/api/v1/students","level":"info","msg":"handled request","time":"2024-08-20T22:31:34+05:30"}
+{"Method":"GET","Path":"/api/v1/student/15","level":"info","msg":"handled request","time":"2024-08-20T22:32:50+05:30"}

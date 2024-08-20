@@ -1,3 +1,6 @@
+**images**
+/images
+
 **create table query**
 
 CREATE TABLE `students` (
@@ -49,3 +52,4 @@ curl -v -X PUT http://localhost:8080/api/v1/student/14 -H "Content-Type: applica
 **DELETE**
 
 curl -v -X DELETE http://localhost:8080/api/v1/student/7 -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemVkIjp0cnVlLCJleHAiOjE3MjQxNTE3NzgsImlhdCI6MTcyNDE0ODE3OCwidXNlcl9pZCI6InRlYWNoZXIxIn0.4BfL3syyDAkLTzFNm89A4uwjJLmrESZurc0Ln-HheIg"
+
