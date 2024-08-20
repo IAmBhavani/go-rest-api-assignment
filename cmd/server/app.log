@@ -1,0 +1,18 @@
+{"level":"info","msg":"Setting Up Our APP","time":"2024-08-20T15:32:06+05:30"}
+{"level":"info","msg":"Setting up new database connection","time":"2024-08-20T15:32:06+05:30"}
+{"level":"info","msg":"setting up our handler","time":"2024-08-20T15:32:06+05:30"}
+{"Method":"POST","Path":"/auth","level":"info","msg":"handled request","time":"2024-08-20T15:32:58+05:30"}
+{"Method":"GET","Path":"/api/v1/students","level":"info","msg":"handled request","time":"2024-08-20T15:35:02+05:30"}
+{"level":"error","msg":"an unauthorized request has been made","time":"2024-08-20T15:35:02+05:30"}
+{"Method":"PUT","Path":"/api/v1/student/8","level":"info","msg":"handled request","time":"2024-08-20T15:37:49+05:30"}
+{"Method":"GET","Path":"/api/v1/students","level":"info","msg":"handled request","time":"2024-08-20T15:39:35+05:30"}
+{"level":"error","msg":"an unauthorized request has been made","time":"2024-08-20T15:39:35+05:30"}
+{"Method":"GET","Path":"/api/v1/student/1","level":"info","msg":"handled request","time":"2024-08-20T15:39:45+05:30"}
+{"level":"error","msg":"an unauthorized request has been made","time":"2024-08-20T15:39:45+05:30"}
+{"Method":"GET","Path":"/api/v1/students","level":"info","msg":"handled request","time":"2024-08-20T15:47:38+05:30"}
+{"Method":"GET","Path":"/api/v1/student/8","level":"info","msg":"handled request","time":"2024-08-20T15:50:09+05:30"}
+{"Method":"POST","Path":"/api/v1/student","level":"info","msg":"handled request","time":"2024-08-20T15:52:10+05:30"}
+{"Method":"POST","Path":"/api/v1/student","level":"info","msg":"handled request","time":"2024-08-20T15:58:21+05:30"}
+{"Method":"PUT","Path":"/api/v1/student/8","level":"info","msg":"handled request","time":"2024-08-20T15:59:54+05:30"}
+{"Method":"PUT","Path":"/api/v1/student/8","level":"info","msg":"handled request","time":"2024-08-20T16:00:41+05:30"}
+{"Method":"DELETE","Path":"/api/v1/student/7","level":"info","msg":"handled request","time":"2024-08-20T16:01:52+05:30"}
